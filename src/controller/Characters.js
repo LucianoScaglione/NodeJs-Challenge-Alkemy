@@ -5,7 +5,7 @@ const allCharacters = async (req, res) => { // get y query
   try {
     const { name, age, weight, movies } = req.query
     const runDb = await Personajes.findAll({ attributes: ['imagen', 'nombre'] })
-    if (!name && !age && !weight) {
+    if (!name && !age && !weight && !movies) {
       runDb.length ? res.status(200).send(runDb) : res.send("No existen personajes creados")
     }
     if (name) {
@@ -21,8 +21,9 @@ const allCharacters = async (req, res) => { // get y query
       containerPeso.length ? res.send(containerPeso) : res.send("No existen personajes con ese peso")
     }
     else if (movies) {
+      console.log("entro a movies: ", movies)
       const containerPeliculas = await Personajes.findAll({ include: [{ model: PeliculasYSeries, where: { id: movies } }] })
-      containerPeliculas.length ? res.send(containerPeliculas) : res.send("No existen películas con ese ID")
+      containerPeliculas.length ? res.status(200).send(containerPeliculas) : res.status(404).send("No existen películas con ese ID")
     }
   } catch (error) {
     console.log(error)

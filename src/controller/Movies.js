@@ -1,4 +1,4 @@
-const { Personajes, PeliculasYSeries } = require('../db')
+const { Personajes, PeliculasYSeries, Genero } = require('../db')
 const { Op } = require("sequelize")
 
 const allMovies = async (req, res) => {
@@ -13,7 +13,7 @@ const allMovies = async (req, res) => {
       searchName.length ? res.status(200).send(searchName) : res.status(404).send("No existen películas o series con ese nombre")
     }
     else if (gender) {
-      const searchGender = await Genero.findAll({ where: { id: gender } })
+      const searchGender = await PeliculasYSeries.findAll({ where: { GeneroId: gender } })
       searchGender.length ? res.status(200).send(searchGender) : res.status(404).send("No existe género con ese ID")
     }
     else if (order) {

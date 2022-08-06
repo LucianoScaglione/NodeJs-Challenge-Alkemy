@@ -1,0 +1,1023 @@
+{
+	"info": {
+		"_postman_id": "8a5fc84d-afe6-47f7-bf3f-1373ca219396",
+		"name": "Challenge NodeJS Alkemy",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "20872453"
+	},
+	"item": [
+		{
+			"name": "allCharacters",
+			"request": {
+				"auth": {
+					"type": "apikey",
+					"apikey": [
+						{
+							"key": "value",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxLCJlbWFpbCI6Imx1Y2lhbm9zY2FnbGlvbmU0N0BnbWFpbC5jb20iLCJpYXQiOjE2NTk3NDE4MDAsImV4cCI6MTY1OTc3NzgwMH0.3BMM9qMsv93AioAMiiqwDiW1TyeyM6Lox1xyWIS92pY",
+							"type": "string"
+						},
+						{
+							"key": "key",
+							"value": "x-access-token",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3001/characters",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"characters"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "detailCharacter",
+			"request": {
+				"auth": {
+					"type": "apikey",
+					"apikey": [
+						{
+							"key": "value",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxLCJlbWFpbCI6Imx1Y2lhbm9zY2FnbGlvbmU0N0BnbWFpbC5jb20iLCJpYXQiOjE2NTk3NDE4MDAsImV4cCI6MTY1OTc3NzgwMH0.3BMM9qMsv93AioAMiiqwDiW1TyeyM6Lox1xyWIS92pY",
+							"type": "string"
+						},
+						{
+							"key": "key",
+							"value": "x-access-token",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3001/characters/2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"characters",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "charactersNameQuery",
+			"request": {
+				"auth": {
+					"type": "apikey",
+					"apikey": [
+						{
+							"key": "value",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxLCJlbWFpbCI6Imx1Y2lhbm9zY2FnbGlvbmU0N0BnbWFpbC5jb20iLCJpYXQiOjE2NTk3NDE4MDAsImV4cCI6MTY1OTc3NzgwMH0.3BMM9qMsv93AioAMiiqwDiW1TyeyM6Lox1xyWIS92pY",
+							"type": "string"
+						},
+						{
+							"key": "key",
+							"value": "x-access-token",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3001/characters?name=pluto",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"characters"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "pluto"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "charactersAgeQuery",
+			"request": {
+				"auth": {
+					"type": "apikey",
+					"apikey": [
+						{
+							"key": "value",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxLCJlbWFpbCI6Imx1Y2lhbm9zY2FnbGlvbmU0N0BnbWFpbC5jb20iLCJpYXQiOjE2NTk3NDE4MDAsImV4cCI6MTY1OTc3NzgwMH0.3BMM9qMsv93AioAMiiqwDiW1TyeyM6Lox1xyWIS92pY",
+							"type": "string"
+						},
+						{
+							"key": "key",
+							"value": "x-access-token",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3001/characters?age=102",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"characters"
+					],
+					"query": [
+						{
+							"key": "age",
+							"value": "102"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "charactersWeightQuery",
+			"request": {
+				"auth": {
+					"type": "apikey",
+					"apikey": [
+						{
+							"key": "value",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxLCJlbWFpbCI6Imx1Y2lhbm9zY2FnbGlvbmU0N0BnbWFpbC5jb20iLCJpYXQiOjE2NTk3NDE4MDAsImV4cCI6MTY1OTc3NzgwMH0.3BMM9qMsv93AioAMiiqwDiW1TyeyM6Lox1xyWIS92pY",
+							"type": "string"
+						},
+						{
+							"key": "key",
+							"value": "x-access-token",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3001/characters?weight=322",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"characters"
+					],
+					"query": [
+						{
+							"key": "weight",
+							"value": "322"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "charactersMoviesQuery",
+			"request": {
+				"auth": {
+					"type": "apikey",
+					"apikey": [
+						{
+							"key": "value",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxLCJlbWFpbCI6Imx1Y2lhbm9zY2FnbGlvbmU0N0BnbWFpbC5jb20iLCJpYXQiOjE2NTk3NDE4MDAsImV4cCI6MTY1OTc3NzgwMH0.3BMM9qMsv93AioAMiiqwDiW1TyeyM6Lox1xyWIS92pY",
+							"type": "string"
+						},
+						{
+							"key": "key",
+							"value": "x-access-token",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3001/characters?movies=1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"characters"
+					],
+					"query": [
+						{
+							"key": "movies",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "updateCharacter",
+			"request": {
+				"auth": {
+					"type": "apikey",
+					"apikey": [
+						{
+							"key": "value",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxLCJlbWFpbCI6Imx1Y2lhbm9zY2FnbGlvbmU0N0BnbWFpbC5jb20iLCJpYXQiOjE2NTk3NDE4MDAsImV4cCI6MTY1OTc3NzgwMH0.3BMM9qMsv93AioAMiiqwDiW1TyeyM6Lox1xyWIS92pY",
+							"type": "string"
+						},
+						{
+							"key": "key",
+							"value": "x-access-token",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nombre\" : \"Proban2\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3001/characters/2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"characters",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "createCharacter",
+			"request": {
+				"auth": {
+					"type": "apikey",
+					"apikey": [
+						{
+							"key": "value",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxLCJlbWFpbCI6Imx1Y2lhbm9zY2FnbGlvbmU0N0BnbWFpbC5jb20iLCJpYXQiOjE2NTk3NDE4MDAsImV4cCI6MTY1OTc3NzgwMH0.3BMM9qMsv93AioAMiiqwDiW1TyeyM6Lox1xyWIS92pY",
+							"type": "string"
+						},
+						{
+							"key": "key",
+							"value": "x-access-token",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"imagen\": \"https://static.wikia.nocookie.net/disney/images/d/d8/MickeyMouse.png/revision/latest/top-crop/width/360/height/360?cb=20140304090828&path-prefix=es\",\r\n    \"nombre\": \"reciente\",\r\n    \"edad\": 37,\r\n    \"peso\": \"66kgs\",\r\n    \"historia\": \"Prueba\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3001/characters",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"characters"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "deleteCharacter",
+			"request": {
+				"auth": {
+					"type": "apikey",
+					"apikey": [
+						{
+							"key": "value",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxLCJlbWFpbCI6Imx1Y2lhbm9zY2FnbGlvbmU0N0BnbWFpbC5jb20iLCJpYXQiOjE2NTk3NDE4MDAsImV4cCI6MTY1OTc3NzgwMH0.3BMM9qMsv93AioAMiiqwDiW1TyeyM6Lox1xyWIS92pY",
+							"type": "string"
+						},
+						{
+							"key": "key",
+							"value": "x-access-token",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nombre\" : \"Proban2\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3001/characters/6",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"characters",
+						"6"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "allGender",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "apikey",
+					"apikey": [
+						{
+							"key": "value",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxLCJlbWFpbCI6Imx1Y2lhbm9zY2FnbGlvbmU0N0BnbWFpbC5jb20iLCJpYXQiOjE2NTk3NDE4MDAsImV4cCI6MTY1OTc3NzgwMH0.3BMM9qMsv93AioAMiiqwDiW1TyeyM6Lox1xyWIS92pY",
+							"type": "string"
+						},
+						{
+							"key": "key",
+							"value": "x-access-token",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nombre\" : \"Acción\",\r\n    \"imagen\" : \"vacío.jpg\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3001/gender",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"gender"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "createGender",
+			"request": {
+				"auth": {
+					"type": "apikey",
+					"apikey": [
+						{
+							"key": "value",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxLCJlbWFpbCI6Imx1Y2lhbm9zY2FnbGlvbmU0N0BnbWFpbC5jb20iLCJpYXQiOjE2NTk3NDE4MDAsImV4cCI6MTY1OTc3NzgwMH0.3BMM9qMsv93AioAMiiqwDiW1TyeyM6Lox1xyWIS92pY",
+							"type": "string"
+						},
+						{
+							"key": "key",
+							"value": "x-access-token",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nombre\" : \"generoprueba\",\r\n    \"imagen\" : \"vacío.jpg\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3001/gender",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"gender"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "deleteGender",
+			"request": {
+				"auth": {
+					"type": "apikey",
+					"apikey": [
+						{
+							"key": "value",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxLCJlbWFpbCI6Imx1Y2lhbm9zY2FnbGlvbmU0N0BnbWFpbC5jb20iLCJpYXQiOjE2NTk3NDE4MDAsImV4cCI6MTY1OTc3NzgwMH0.3BMM9qMsv93AioAMiiqwDiW1TyeyM6Lox1xyWIS92pY",
+							"type": "string"
+						},
+						{
+							"key": "key",
+							"value": "x-access-token",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nombre\" : \"Acción\",\r\n    \"imagen\" : \"vacío.jpg\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3001/gender/5",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"gender",
+						"5"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "allMovies",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "apikey",
+					"apikey": [
+						{
+							"key": "value",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxLCJlbWFpbCI6Imx1Y2lhbm9zY2FnbGlvbmU0N0BnbWFpbC5jb20iLCJpYXQiOjE2NTk3NDE4MDAsImV4cCI6MTY1OTc3NzgwMH0.3BMM9qMsv93AioAMiiqwDiW1TyeyM6Lox1xyWIS92pY",
+							"type": "string"
+						},
+						{
+							"key": "key",
+							"value": "x-access-token",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nombre\" : \"Acción\",\r\n    \"imagen\" : \"vacío.jpg\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3001/movies",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"movies"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "moviesNameQuery",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "apikey",
+					"apikey": [
+						{
+							"key": "value",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxLCJlbWFpbCI6Imx1Y2lhbm9zY2FnbGlvbmU0N0BnbWFpbC5jb20iLCJpYXQiOjE2NTk3NDE4MDAsImV4cCI6MTY1OTc3NzgwMH0.3BMM9qMsv93AioAMiiqwDiW1TyeyM6Lox1xyWIS92pY",
+							"type": "string"
+						},
+						{
+							"key": "key",
+							"value": "x-access-token",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nombre\" : \"Acción\",\r\n    \"imagen\" : \"vacío.jpg\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3001/movies?name=Prueba3",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"movies"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "Prueba3"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "moviesGenderQuery",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "apikey",
+					"apikey": [
+						{
+							"key": "value",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxLCJlbWFpbCI6Imx1Y2lhbm9zY2FnbGlvbmU0N0BnbWFpbC5jb20iLCJpYXQiOjE2NTk3NDE4MDAsImV4cCI6MTY1OTc3NzgwMH0.3BMM9qMsv93AioAMiiqwDiW1TyeyM6Lox1xyWIS92pY",
+							"type": "string"
+						},
+						{
+							"key": "key",
+							"value": "x-access-token",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nombre\" : \"Acción\",\r\n    \"imagen\" : \"vacío.jpg\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3001/movies?gender=2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"movies"
+					],
+					"query": [
+						{
+							"key": "gender",
+							"value": "2"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "moviesOrderAscQuery",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "apikey",
+					"apikey": [
+						{
+							"key": "value",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxLCJlbWFpbCI6Imx1Y2lhbm9zY2FnbGlvbmU0N0BnbWFpbC5jb20iLCJpYXQiOjE2NTk3NDE4MDAsImV4cCI6MTY1OTc3NzgwMH0.3BMM9qMsv93AioAMiiqwDiW1TyeyM6Lox1xyWIS92pY",
+							"type": "string"
+						},
+						{
+							"key": "key",
+							"value": "x-access-token",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nombre\" : \"Acción\",\r\n    \"imagen\" : \"vacío.jpg\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3001/movies?order=ASC",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"movies"
+					],
+					"query": [
+						{
+							"key": "order",
+							"value": "ASC"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "moviesOrderDescQuery",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "apikey",
+					"apikey": [
+						{
+							"key": "value",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxLCJlbWFpbCI6Imx1Y2lhbm9zY2FnbGlvbmU0N0BnbWFpbC5jb20iLCJpYXQiOjE2NTk3NDE4MDAsImV4cCI6MTY1OTc3NzgwMH0.3BMM9qMsv93AioAMiiqwDiW1TyeyM6Lox1xyWIS92pY",
+							"type": "string"
+						},
+						{
+							"key": "key",
+							"value": "x-access-token",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nombre\" : \"Acción\",\r\n    \"imagen\" : \"vacío.jpg\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3001/movies?order=DESC",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"movies"
+					],
+					"query": [
+						{
+							"key": "order",
+							"value": "DESC"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "detailMovie",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "apikey",
+					"apikey": [
+						{
+							"key": "value",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxLCJlbWFpbCI6Imx1Y2lhbm9zY2FnbGlvbmU0N0BnbWFpbC5jb20iLCJpYXQiOjE2NTk3NDE4MDAsImV4cCI6MTY1OTc3NzgwMH0.3BMM9qMsv93AioAMiiqwDiW1TyeyM6Lox1xyWIS92pY",
+							"type": "string"
+						},
+						{
+							"key": "key",
+							"value": "x-access-token",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nombre\" : \"Acción\",\r\n    \"imagen\" : \"vacío.jpg\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3001/movies/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"movies",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "createMovie",
+			"request": {
+				"auth": {
+					"type": "apikey",
+					"apikey": [
+						{
+							"key": "value",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxLCJlbWFpbCI6Imx1Y2lhbm9zY2FnbGlvbmU0N0BnbWFpbC5jb20iLCJpYXQiOjE2NTk3NDE4MDAsImV4cCI6MTY1OTc3NzgwMH0.3BMM9qMsv93AioAMiiqwDiW1TyeyM6Lox1xyWIS92pY",
+							"type": "string"
+						},
+						{
+							"key": "key",
+							"value": "x-access-token",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"imagen\": \"https://static.wikia.nocookie.net/disney/images/d/d8/MickeyMouse.png/revision/latest/top-crop/width/360/height/360?cb=20140304090828&path-prefix=es\",\r\n        \"titulo\": \"Recieeen\",\r\n        \"creacion\": \"30/02/1332\",\r\n        \"calificacion\" : 3,\r\n        \"GeneroId\" : 2,\r\n        \"personajes\" : [\"1\"] \r\n    }\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3001/movies",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"movies"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "updateMovie",
+			"request": {
+				"auth": {
+					"type": "apikey",
+					"apikey": [
+						{
+							"key": "value",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxLCJlbWFpbCI6Imx1Y2lhbm9zY2FnbGlvbmU0N0BnbWFpbC5jb20iLCJpYXQiOjE2NTk3NDE4MDAsImV4cCI6MTY1OTc3NzgwMH0.3BMM9qMsv93AioAMiiqwDiW1TyeyM6Lox1xyWIS92pY",
+							"type": "string"
+						},
+						{
+							"key": "key",
+							"value": "x-access-token",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"titulo\": \"Probando postman\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3001/movies/6",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"movies",
+						"6"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "deleteMovie",
+			"request": {
+				"auth": {
+					"type": "apikey",
+					"apikey": [
+						{
+							"key": "value",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxLCJlbWFpbCI6Imx1Y2lhbm9zY2FnbGlvbmU0N0BnbWFpbC5jb20iLCJpYXQiOjE2NTk3NDE4MDAsImV4cCI6MTY1OTc3NzgwMH0.3BMM9qMsv93AioAMiiqwDiW1TyeyM6Lox1xyWIS92pY",
+							"type": "string"
+						},
+						{
+							"key": "key",
+							"value": "x-access-token",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"titulo\": \"Probando postman\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3001/movies/6",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"movies",
+						"6"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "authRegister",
+			"request": {
+				"auth": {
+					"type": "apikey",
+					"apikey": [
+						{
+							"key": "value",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxLCJlbWFpbCI6Imx1Y2lhbm9zY2FnbGlvbmU0N0BnbWFpbC5jb20iLCJpYXQiOjE2NTk3NDE4MDAsImV4cCI6MTY1OTc3NzgwMH0.3BMM9qMsv93AioAMiiqwDiW1TyeyM6Lox1xyWIS92pY",
+							"type": "string"
+						},
+						{
+							"key": "key",
+							"value": "x-access-token",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Probando postman\",\r\n    \"email\" : \"lucianoscaglione21@gmail.com\",\r\n    \"password\" : \"123456\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3001/auth/register",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"auth",
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "authLogin",
+			"request": {
+				"auth": {
+					"type": "apikey",
+					"apikey": [
+						{
+							"key": "value",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxLCJlbWFpbCI6Imx1Y2lhbm9zY2FnbGlvbmU0N0BnbWFpbC5jb20iLCJpYXQiOjE2NTk3NDE4MDAsImV4cCI6MTY1OTc3NzgwMH0.3BMM9qMsv93AioAMiiqwDiW1TyeyM6Lox1xyWIS92pY",
+							"type": "string"
+						},
+						{
+							"key": "key",
+							"value": "x-access-token",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\" : \"lucianoscaglione21@gmail.com\",\r\n    \"password\" : \"123456\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3001/auth/login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"auth",
+						"login"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
